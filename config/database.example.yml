@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: excavatorr_development
+
+test:
+  <<: *default
+  database: excavatorr_test
+
+production:
+  <<: *default
+  database: excavatorr_production
+  username: excavatorr
+  password: <%= ENV['EXCAVATORR_DATABASE_PASSWORD'] %>
