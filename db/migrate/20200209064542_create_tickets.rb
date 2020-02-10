@@ -8,7 +8,7 @@ class CreateTickets < ActiveRecord::Migration[5.2]
       t.integer :request_type, null: false, default: 0
       t.datetime :response_due_date_time
       t.string :primary_sa_code
-      t.string :additional_sa_code
+      t.string :additional_sa_codes, array: true, default: []
       t.string :well_known_text
 
       t.timestamps

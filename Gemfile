@@ -14,6 +14,11 @@ gem 'sass-rails', '>= 6'
 gem 'turbolinks', '~> 5'
 gem 'webpacker', '~> 4.0'
 
+# Trailblazer bundle
+gem 'dry-validation', '0.11.1'
+gem 'simple_endpoint'
+gem 'trailblazer'
+
 group :development, :test do
   gem 'factory_bot_rails'
   gem 'ffaker'

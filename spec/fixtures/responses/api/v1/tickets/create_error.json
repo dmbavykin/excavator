@@ -1,0 +1,20 @@
+{
+  "request_number": [
+    "must be filled"
+  ],
+  "sequence_number": [
+    "must be filled"
+  ],
+  "response_due_date_time": [
+    "must be filled"
+  ],
+  "primary_sa_code": [
+    "must be filled"
+  ],
+  "additional_sa_codes": [
+    "must be filled"
+  ],
+  "well_known_text": [
+    "must be filled"
+  ]
+}
