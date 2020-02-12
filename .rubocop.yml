@@ -1,0 +1,26 @@
+require:
+  - rubocop-rails
+
+AllCops:
+  Exclude:
+    - bin/**/*
+    - db/**/*
+    - vendor/**/*
+    - spec/fixtures/**/*
+    - tmp/**/*
+
+Rails:
+  Enabled: true
+
+Style/Documentation:
+  Enabled: false
+
+Layout/LineLength:
+  Max: 120
+
+Metrics/BlockLength:
+  Exclude:
+    - config/**/*.rb
+    - Rakefile
+    - spec/**/*.rb
+    - config/routes.rb

@@ -1,0 +1,38 @@
+version: "3.7"
+
+volumes:
+  postgres:
+
+services:
+  postgres:
+    image: postgres:11-alpine
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "postgres"]
+
+  server_app:
+    build: .
+    command: bundle exec rails server -b 0.0.0.0
+    entrypoint: ./docker-entrypoint.sh
+    volumes:
+      - .:/home/www/excavator
+      - /home/www/excavator/tmp
+    tty: true
+    stdin_open: true
+    environment:
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_USERNAME: postgres
+      DB_PASSWORD: postgres
+    depends_on:
+      - postgres
+    ports:
+      - 3000:3000
+    healthcheck:
+      test: ["CMD", "http", "GET", "localhost:3000"]

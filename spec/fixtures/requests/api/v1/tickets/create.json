@@ -1,0 +1,110 @@
+{
+  "contact_center": "UPCA",
+  "request_number": "09252012-00001",
+  "reference_request_number": "",
+  "version_number": "0",
+  "sequence_number": "2421",
+  "request_type": "normal",
+  "request_action": "Restake",
+  "date_times": {
+    "request_taken_date_time": "2011/07/02 23:09:38",
+    "transmission_date_time": "",
+    "legal_date_time": "2011/07/08 07:00:00",
+    "response_due_date_time": "2011/07/13 23:59:59",
+    "restake_date": "2011/07/21 00:00:00",
+    "expiration_date": "2011/07/26 00:00:00",
+    "lp_meeting_accept_due_date": "",
+    "overhead_begin_date": "",
+    "overhead_end_date": ""
+  },
+  "service_area": {
+    "primary_service_area_code": {
+      "sa_code": "ZZGL103"
+    },
+    "additional_service_area_codes": {
+      "sa_code": [
+        "ZZL01",
+        "ZZL02",
+        "ZZL03"
+      ]
+    }
+  },
+  "excavator": {
+    "company_name": "John Doe CONSTRUCTION",
+    "address": "555 Some RD",
+    "city": "SOME PARK",
+    "state": "ZZ",
+    "zip": "55555",
+    "type": "Excavator",
+    "contact": {
+      "name": "Johnny Doe",
+      "phone": "1115552345",
+      "email": "example@example.com"
+    },
+    "field_contact": {
+      "name": "Field Contact",
+      "phone": "1235557924",
+      "email": "example@example.com"
+    },
+    "crew_onsite": "true"
+  },
+  "excavation_info": {
+    "type_of_work": "rpr man hole tops",
+    "work_done_for": "gpc",
+    "project_duration": "60 days",
+    "project_start_date": "2011/07/08 07:00:00",
+    "explosives": "No",
+    "underground_overhead": "Underground",
+    "horizontal_boring": "Road, Driveway, and Sidewalk",
+    "whitelined": "No",
+    "locate_instructions": "locate along the r/o/w on both sides of the rd - including the rd itself - from inter to inter ",
+    "remarks": "Previous Request Number:05161-120-011\n\n\t\t\tPrevious Request Number: 06044-254-020\n\n\t\t\tPrevious Request Number: 06171-300-030",
+    "digsite_info": {
+      "lookup_by": "MANUAL",
+      "location_type": "Multiple Address",
+      "subdivision": "",
+      "address_info": {
+        "state": "ST",
+        "county": "COUNTY",
+        "place": "PLACE",
+        "zip": "",
+        "address": {
+          "address_num": [
+            "Address 1",
+            "Address 2"
+          ]
+        },
+        "street": {
+          "prefix": "",
+          "name": "Trinity",
+          "type": "Ave",
+          "suffix": "SW"
+        }
+      },
+      "near_street": {
+        "state": "XX",
+        "county": "SomeCounty",
+        "place": "City",
+        "prefix": "",
+        "name": "",
+        "type": "",
+        "suffix": ""
+      },
+      "intersection": {
+        "ito_i": [
+          {
+            "state": "XX",
+            "county": "FULERTON",
+            "place": "NORCROSS",
+            "prefix": "",
+            "name": "London",
+            "type": "St",
+            "suffix": "SW"
+          },
+          {}
+        ]
+      },
+      "well_known_text": "POLYGON((-81.13390268058475 32.07206917625161,-81.14660562247929 32.04064386441295,-81.08858407706913 32.02259853170128,-81.05322183341679 32.02434500961698,-81.05047525138554 32.042681017283066,-81.0319358226746 32.06537765335268,-81.01202310294804 32.078469305179404,-81.02850259513554 32.07963291684719,-81.07759774894413 32.07090546831167,-81.12154306144413 32.08806865844325,-81.13390268058475 32.07206917625161))"
+    }
+  }
+}
