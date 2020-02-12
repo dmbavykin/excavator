@@ -6,4 +6,8 @@ class Ticket < ApplicationRecord
   enum request_type: {
     normal: 0
   }
+
+  def coordinates
+    well_known_text.match(/POLYGON\(\((.*)\)\)/)[1]
+  end
 end

@@ -1,0 +1,17 @@
+<div>
+  Ticket
+  <% @ticket.attributes.each do |name, value| %>
+    <div>
+      <%= "#{name} - #{value}" %>
+    </div>
+  <% end %>
+  <%= hidden_field_tag :coordinates, @ticket.coordinates %>
+  <hr / >
+  Excavator
+  <% @ticket.excavator.attributes.each do |name, value| %>
+    <div>
+      <%= "#{name} - #{value}" %>
+    </div>
+  <% end %>
+</div>
+<div id="map"></div>

@@ -5,6 +5,8 @@
 
 require("@rails/ujs").start()
 require("turbolinks").start()
+require('google-maps')
+require('./tickets')
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference

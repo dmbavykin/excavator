@@ -1,0 +1,9 @@
+<div><b>Tickets</b></div>
+
+<% @tickets.each do |ticket| %>
+  <div>
+    <%= ticket.request_number %>
+    <%= link_to "Ticket #{ticket.id}", ticket_path(ticket) %>
+  </div>
+  <hr />
+<% end %>
